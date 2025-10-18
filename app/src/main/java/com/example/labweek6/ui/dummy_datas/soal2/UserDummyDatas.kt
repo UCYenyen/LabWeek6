@@ -4,14 +4,6 @@ import com.example.labweek6.ui.model.soal2.User
 object UserDummyDatas {
     val dummyUsers = arrayListOf(
         User(
-            name = "Tanjung D.",
-            age = 21,
-            height = 165,
-            weight = 55,
-            numberOfFriends = emptyList(),
-            numberOfWorkouts = emptyList()
-        ),
-        User(
             name = "Evan M.",
             age = 29,
             height = 165,
