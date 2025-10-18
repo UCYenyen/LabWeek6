@@ -80,7 +80,7 @@ fun AppRoute() {
             startDestination = AppView.Profile.name
         ) {
             composable(route = AppView.Profile.name) {
-                ProfileView(viewModel, navController = navController)
+                ProfileView(viewModel)
             }
             composable(route = AppView.Workouts.name) {
                 WorkoutView(viewModel)
