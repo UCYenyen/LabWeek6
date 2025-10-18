@@ -12,18 +12,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import com.example.labweek6.ui.view.soal2.components.RecentlyAddedFriendList
 import com.example.labweek6.ui.view.soal2.components.ProfileCard
 import com.example.labweek6.ui.view.soal2.components.RecentWorkoutList
 import com.example.labweek6.ui.viewmodel.soal2.Soal2ViewModel
 
 @Composable
-fun ProfileView(soal2ViewModel: Soal2ViewModel, navController: NavController = rememberNavController()) {
+fun ProfileView(soal2ViewModel: Soal2ViewModel) {
     val currentUser by soal2ViewModel.currentUser.collectAsState()
     val friends by soal2ViewModel.friends.collectAsState()
-//    val workoutList by soal2ViewModel.currentUser.collectAsState()
 
     LazyColumn(
         modifier = Modifier
